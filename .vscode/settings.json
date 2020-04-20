@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "api-extractor.json": "jsonc"
+  },
+  "mocha.coverage": {
+    "enable": false
+  },
+  "mocha.files.glob": "test/**/*test.js",
+  "mocha.logVerbose": true
+}

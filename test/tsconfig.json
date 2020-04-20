@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "target": "ES2018",
+    "moduleResolution": "node",
+    "module": "es2015",
+    "strict": true,
+    "noEmit": true,
+    "types": ["node", "chai", "mocha"],
+    "esModuleInterop": true
+  },
+  "include": ["*.js"]
+}
