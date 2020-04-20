@@ -31,8 +31,10 @@ jobs:
     - name: lint
       run: yarn lint
       env:
+        NODE_OPTIONS: --experimental-modules
         CI: true
     - name: test
       run: yarn test
       env:
+        NODE_OPTIONS: --experimental-modules
         CI: true

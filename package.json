@@ -20,10 +20,10 @@
   "types": "./dist/typescript-library-starter.d.ts",
   "scripts": {
     "docs": "api-extractor run --typescript-compiler-folder ./node_modules/typescript && api-documenter markdown -i ./temp -o ./docs",
-    "lint": "NODE_OPTIONS=--experimental-modules eslint .",
+    "lint": "eslint .",
     "prepack": "yarn docs",
     "prepare": "tsc && rollup -c rollup.config.js",
-    "test": "NODE_OPTIONS=--experimental-modules mocha"
+    "test": "mocha"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
@@ -56,7 +56,7 @@
     "require": "./dist/index.cjs"
   },
   "volta": {
-    "node": "12.16.2",
+    "node": "13.13.0",
     "yarn": "1.22.0"
   }
 }
