@@ -9,7 +9,8 @@
     "declaration": true,
     "sourceMap": true,
     "declarationMap": true,
-    "types": ["node"]
+    "types": ["node"],
+    "newLine": "lf"
   },
   "include": ["src/**/*.ts"]
 }
