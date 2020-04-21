@@ -21,7 +21,11 @@
 
     <script type="module">
       (async () => {
-        mocha.setup('bdd');
+        const params = new URLSearchParams(location.search);
+        mocha.setup({
+          ui: 'bdd',
+          timeout: params.get('timeout')
+        });
         mocha.checkLeaks();
 
         await import('/test/test.js');

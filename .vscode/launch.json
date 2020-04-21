@@ -5,6 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Mocha in Chrome",
+      "url": "http://localhost:5000/browser/?timeout=0",
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary",
+      "runtimeArgs": ["--enable-features=ImportMaps"],
+      "sourceMaps": true
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Mocha Tests",
@@ -17,6 +27,9 @@
         "--colors",
         "${workspaceFolder}/test"
       ],
+      "env": {
+        "NODE_OPTIONS": "--experimental-modules"
+      },
       "internalConsoleOptions": "openOnSessionStart",
       "skipFiles": ["<node_internals>/**"]
     }
