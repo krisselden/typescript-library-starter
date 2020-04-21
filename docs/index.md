@@ -8,5 +8,5 @@
 
 |  Package | Description |
 |  --- | --- |
-|  [typescript-library-starter](./typescript-library-starter.md) |  |
+|  [typescript-library-starter](./typescript-library-starter.md) | A example library |
 

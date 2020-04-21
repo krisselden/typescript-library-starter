@@ -6,7 +6,13 @@ An example of a typescript node library leveraging native es modules with CJS ba
 
 ## Features
 
-### Documentation
+- [Documentation Generation](#documentation-generation)
+- [CJS backwards compatibility](#cjs-backwards-compatibility)
+- [Mocha Tests use Native Module Support](#mocha-tests-use-native-module-support)
+  - [Run in Node](#run-in-node)
+  - [Run in Browser](#run-in-browser)
+
+### Documentation Generation
 
 Uses TSDoc comments and @microsoft/api-extractor
 
@@ -38,13 +44,13 @@ Go to Definition still works via declaration map to go to the original source.
 
 Debugging uses TS sourcemaps, tests can be updated and rerun without building src.
 
-#### Tests Run in Node
+#### Run in Node
 
 VS Code debugging works out of the box with Node 13 while in Node 12, requires env `NODE_OPTIONS=--experimental-modules` to be set.
 
 Test Explorer UI addon works but mocha-sidebar has issues (using synchronous test file loading).
 
-#### Tests Run in Browser
+#### Run in Browser
 
 Mocha tests can run in browser with Chrome Canary with ImportMaps feature enabled.
 

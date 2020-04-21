@@ -14,5 +14,9 @@ export interface Greeter {
  * @public
  */
 export interface GreeterDelegate {
+  /**
+   * Say the specified message
+   * @param msg - a message to say
+   */
   say(msg: string): void;
 }

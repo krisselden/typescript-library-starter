@@ -11,14 +11,11 @@ export interface Greeter {
 
 // @public
 export interface GreeterDelegate {
-    // (undocumented)
     say(msg: string): void;
 }
 
 // @public
 export function newGreeter(delegate: GreeterDelegate): Greeter;
 
-
-// (No @packageDocumentation comment for this package)
 
 ```

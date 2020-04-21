@@ -1,3 +1,8 @@
+/**
+ * A example library
+ * @packageDocumentation
+ */
+
 export { default as newGreeter } from './new-greeter.js';
 
 // should be export type but api-documenter

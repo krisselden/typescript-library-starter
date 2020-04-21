@@ -16,5 +16,5 @@ export interface GreeterDelegate
 
 |  Method | Description |
 |  --- | --- |
-|  [say(msg)](./typescript-library-starter.greeterdelegate.say.md) |  |
+|  [say(msg)](./typescript-library-starter.greeterdelegate.say.md) | Say the specified message |
 

@@ -4,6 +4,8 @@
 
 ## typescript-library-starter package
 
+A example library
+
 ## Functions
 
 |  Function | Description |
