@@ -26,11 +26,11 @@ Newer Node versions will use "exports" which specifies import should use es modu
 
 ### Mocha Tests use Native Module Support
 
-Tests are written in JS and run against dist output but still typechecked.
+Tests are written in JS and run against dist output but still typechecked via tsserver.
 
 Workflow start build task `tsc - watch - tsconfig.json` and run tests/
 
-Generally tests can be strictly typechecked without any annotation and if needed types can be annotated with jsdoc.
+Generally tests can be strictly typechecked using inferred types without any annotation and if needed types can be annotated with jsdoc.
 
 The benefits are tests do not need compilation, consume declaration types, and build output.
 
@@ -46,8 +46,8 @@ Test Explorer UI addon works but mocha-sidebar has issues (using synchronous tes
 
 #### Tests Run in Browser
 
-Mocha tests can run in browser with chrome canary with ImportMaps feature enabled.
+Mocha tests can run in browser with Chrome Canary with ImportMaps feature enabled.
 
 VS Code debugging via Debugger for Chrome extension.
 
-Does not have cjs interop, so if dependency does not have an es module export the import map should map to a shim that exports the UMD global and the UMD script included before tests are loaded (this is how chai works).
+Does not have cjs interop, so if dependency does not have an es module export the import map should map to a shim that exports the UMD global and the UMD script included before tests are loaded (this is how chai works in this starter repo).

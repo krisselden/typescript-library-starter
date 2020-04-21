@@ -23,7 +23,7 @@
     "lint": "eslint .",
     "prepack": "yarn docs",
     "prepare": "tsc && rollup -c rollup.config.js",
-    "test": "mocha",
+    "test": "tsc -p test && mocha",
     "start": "serve"
   },
   "devDependencies": {
