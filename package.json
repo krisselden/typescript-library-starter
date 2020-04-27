@@ -54,6 +54,9 @@
     "import": "./dist/index.js",
     "require": "./dist/index.cjs"
   },
+  "mocha": {
+    "spec": "test/**/*test.js"
+  },
   "volta": {
     "node": "13.13.0",
     "yarn": "1.22.0"

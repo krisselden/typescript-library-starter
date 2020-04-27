@@ -1,7 +1,0 @@
-{
-  "extension": ["js"],
-  "package": "./package.json",
-  "reporter": "spec",
-  "ui": "bdd",
-  "spec": "test/**/*test.js"
-}
