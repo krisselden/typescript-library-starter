@@ -4,7 +4,13 @@ module.exports = {
     sourceType: 'module',
   },
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'import', 'simple-import-sort', 'prettier', 'filenames'],
+  plugins: [
+    '@typescript-eslint',
+    'import',
+    'simple-import-sort',
+    'prettier',
+    'filenames',
+  ],
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
@@ -12,6 +18,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'plugin:node/recommended',
     'prettier',
     'prettier/@typescript-eslint',
   ],
@@ -37,17 +44,26 @@ module.exports = {
         sourceType: 'module',
       },
       files: ['src/**/*.ts'],
+      settings: {
+        node: {
+          tryExtensions: ['.js', '.json', '.d.ts', '.ts'],
+
+          convertPath: [
+            {
+              include: ['src/**/*.ts'],
+              replace: ['^src/(.+)\\.ts$', 'dist/$1.js'],
+            },
+          ],
+        },
+      },
       extends: [
         'plugin:@typescript-eslint/recommended-requiring-type-checking',
       ],
       rules: {
         'import/no-unresolved': 'off',
-        "filenames/match-regex": [
-          "error",
-          "^[a-z0-9\\-]+$",
-          true,
-        ],
-        "filenames/match-exported": ["error", "kebab"],
+        'filenames/match-regex': ['error', '^[a-z0-9\\-]+$', true],
+        'filenames/match-exported': ['error', 'kebab'],
+        'node/no-missing-import': 'off',
       },
     },
     {
