@@ -33,7 +33,8 @@ module.exports = {
       'error',
       { allowExpressions: true },
     ],
-    'simple-import-sort/sort': 'error',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
   },
   overrides: [
     {

@@ -16,9 +16,9 @@ export default function newGreeter(delegate: GreeterDelegate): Greeter;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  delegate | <code>GreeterDelegate</code> | a [GreeterDelegate](./typescript-library-starter.greeterdelegate.md) implementation |
+|  delegate | [GreeterDelegate](./typescript-library-starter.greeterdelegate.md) | a [GreeterDelegate](./typescript-library-starter.greeterdelegate.md) implementation |
 
 <b>Returns:</b>
 
-`Greeter`
+[Greeter](./typescript-library-starter.greeter.md)
 

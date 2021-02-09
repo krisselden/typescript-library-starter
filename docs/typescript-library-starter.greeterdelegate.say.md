@@ -16,9 +16,9 @@ say(msg: string): void;
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  msg | <code>string</code> | a message to say |
+|  msg | string | a message to say |
 
 <b>Returns:</b>
 
-`void`
+void
 
