@@ -1,5 +1,5 @@
 // should be import type {} but breaks docs
-import { Greeter, GreeterDelegate } from './interfaces';
+import type { Greeter, GreeterDelegate } from './interfaces';
 
 class GreeterImpl implements Greeter {
   constructor(private delegate: GreeterDelegate) {}
